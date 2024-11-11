@@ -2,4 +2,6 @@
 
 This project demonstrates how to implement basic HTTP authentication using AWS CloudFront Functions.
 
-To learn how it works, read the [blog post](https://sergiopichardo.com/posts/basic-http-auth).
+![Basic HTTP Auth with CloudFront Functions](/assets/basic-http-auth-workflow.png)
+
+To learn how it works, check out the [blog post](https://sergiopichardo.com/posts/basic-http-auth)!
