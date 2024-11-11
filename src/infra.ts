@@ -61,8 +61,10 @@ export class WebsiteStack extends cdk.Stack {
     appName: string;
   }): s3.Bucket {
     return new s3.Bucket(this, `${props.appName}WebsiteBucket`, {
-      removalPolicy: cdk.RemovalPolicy.DESTROY,
+      publicReadAccess: false,
+      blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
       autoDeleteObjects: true,
+      removalPolicy: cdk.RemovalPolicy.DESTROY,
     });
   }
 
